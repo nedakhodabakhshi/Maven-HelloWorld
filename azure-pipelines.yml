@@ -33,7 +33,7 @@ steps:
     publishLocation: 'Container'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourceDirectory)/webapp/target'
+    SourceFolder: '$(Build.SourcesDirectory)/webapp/target'
     Contents: '**/*.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
 - task: PublishBuildArtifacts@1
